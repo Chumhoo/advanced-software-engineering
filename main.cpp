@@ -1,3 +1,5 @@
+// I've made some changes by local code editor. YES!
+
 //
 //  main.cpp
 //  opencvTest
