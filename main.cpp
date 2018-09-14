@@ -63,25 +63,6 @@ Mat drawHistRGB(const Mat& src)
     
     return display;
     //    imshow("histRGB",display);
-    
-    //////////////////////////
-    //    **保存视频至文件**
-    //
-    //    //定义视频的宽度和高度
-    //    Size histRGBSize(bins * 3, histRGBHeight);
-    //    //创建 writer,并指定 FOURCC 及 FPS 等参数
-    //    static VideoWriter histRGBWriter = VideoWriter("HistRGB.mp4", CV_FOURCC('m','p','4','v'), 25, histRGBSize);
-    //    //检查是否成功创建
-    //    if(!histRGBWriter.isOpened())
-    //    {
-    //        cerr << "Can not create video file.\n" << endl;
-    //    }
-    //    else
-    //    {
-    //        histRGBWriter << display;
-    //    }
-    /////////////////////////
-    //    waitKey(1);
 }
 
 Mat drawHistHS( const Mat& src)
@@ -125,33 +106,8 @@ Mat drawHistHS( const Mat& src)
                       CV_FILLED );
             
         }
-    
-    //    namedWindow( "Source", 1 );
-    //    imshow( "Source", src );
-    
-    //    namedWindow( "H-S Histogram", 1 );
-    //    imshow( "H-S Histogram", histImg );
+  
     return histImg;
-    
-    //////////////////////////
-    //    **保存视频至文件**
-    //
-    //    //定义视频的宽度和高度
-    //    Size histHSSize(hbins * scale, sbins * scale);
-    //    //创建 writer,并指定 FOURCC 及 FPS 等参数
-    //    static VideoWriter histHSWriter = VideoWriter("HistHS.mp4", CV_FOURCC('m','p','4','v'), 25, histHSSize);
-    //    //检查是否成功创建
-    //    if(!histHSWriter.isOpened())
-    //    {
-    //        cerr << "Can not create video file.\n" << endl;
-    //    }
-    //    else
-    //    {
-    //        histHSWriter << histImg;
-    //    }
-    /////////////////////////
-    
-    //    waitKey(1);
 }
 
 //! 计算预览图位置
